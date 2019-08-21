@@ -8,6 +8,7 @@ RUN apt update \
        curl \
        make \
        build-essential \
+       git \
     && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
     && apt update \
     && curl -O https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb \
