@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 ENV LANG=C.UTF-8
 
-ENV BUILD_DATE="2019-09-06"
+ENV BUILD_DATE="2019-10-17"
 
 RUN apt update \
     && apt upgrade -qy \
@@ -12,6 +12,7 @@ RUN apt update \
        build-essential \
        git \
        software-properties-common \
+       rsync \
     && add-apt-repository ppa:longsleep/golang-backports \
     && apt update \
     && apt install -qy golang-go \
