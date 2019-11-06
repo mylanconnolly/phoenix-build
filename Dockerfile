@@ -21,7 +21,12 @@ RUN apt update \
     && dpkg -i erlang-solutions_1.0_all.deb \
     && rm erlang-solutions_1.0_all.deb \
     && apt update \
-    && apt install -qy golang-go mariadb-client-10.1 postgresql-client-12 nodejs esl-erlang \
+    && apt install -qy \
+       golang-go \
+       mariadb-client-10.1 \
+       postgresql-client-12 \
+       nodejs \
+       esl-erlang \
     && apt install -qy elixir \
     && rm -rf /var/lib/apt/lists/*
 
