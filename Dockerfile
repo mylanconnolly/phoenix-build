@@ -15,8 +15,8 @@ RUN apt update \
        rsync \
     && add-apt-repository ppa:longsleep/golang-backports \
     && echo "deb http://apt.postgresql.org/pub/repos/apt/ bionic-pgdg main" > /etc/apt/sources.list.d/pgdg.list \
-    && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
     && curl -sL https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
+    && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
     && curl -O https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb \
     && dpkg -i erlang-solutions_1.0_all.deb \
     && rm erlang-solutions_1.0_all.deb \
