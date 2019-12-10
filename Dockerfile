@@ -2,7 +2,7 @@ FROM ubuntu:bionic
 
 ENV LANG=C.UTF-8
 
-ENV BUILD_DATE="2019-11-06"
+ENV BUILD_DATE="2019-12-10"
 
 RUN apt update \
     && apt upgrade -qy \
